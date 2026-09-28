@@ -1,0 +1,56 @@
+{
+  "generated": {
+    "timestamp": "2026-09-28T10:07:00Z",
+    "agent": "Bootstrap Architect",
+    "pipeline_run_id": "mamarket-stock_20260928_1007"
+  },
+  "project": {
+    "name": "MaMarket Stock",
+    "type": "greenfield",
+    "description": "Standalone, single-machine web application designed to manage product inventory, process sales data via file uploads, and maintain an audit trail of operations.",
+    "architecture_style": "modular-monolith",
+    "tech_stack": {
+      "primary_language": "javascript",
+      "runtime": "node.js",
+      "framework": "express.js",
+      "database": "sqlite",
+      "orm": null,
+      "test_framework": null,
+      "container": null,
+      "ci_cd": null
+    },
+    "services": [
+      {
+        "name": "mod-cat",
+        "type": "backend-service",
+        "sdlc_source": "memory/sdlc/mod-cat-requirements.md"
+      },
+      {
+        "name": "mod-inv",
+        "type": "backend-service",
+        "sdlc_source": "memory/sdlc/mod-inv-requirements.md"
+      },
+      {
+        "name": "mod-aud",
+        "type": "backend-service",
+        "sdlc_source": "memory/sdlc/mod-aud-requirements.md"
+      }
+    ]
+  },
+  "sdlc_artifacts": [
+    { "name": "concept-document.md", "required": false, "present": true },
+    { "name": "fr-nfr-catalogue.md", "required": true, "present": true },
+    { "name": "functional-specification.md", "required": true, "present": true },
+    { "name": "solution-architecture.md", "required": true, "present": true },
+    { "name": "technical-specifications.md", "required": true, "present": true },
+    { "name": "technical_requirements.md", "required": true, "present": true },
+    { "name": "service-requirements", "required": true, "count": 3 }
+  ],
+  "marketplace": {
+    "marketplace_mode": "fallback",
+    "github_available": false,
+    "forced_fallback": false,
+    "sources": [],
+    "recommended_plugins": []
+  }
+}
